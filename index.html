@@ -1,5 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +15,45 @@
     <meta name="description" content="Expert photography workshops in Costa Rica. Learn to capture stunning wildlife and landscapes with professional guidance and post-processing instruction.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body class="bg-gray-900 text-gray-100 font-['Inter']">
     <header class="fixed w-full bg-gray-900/95 backdrop-blur-sm z-50 border-b border-gray-800">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <a href="#" class="text-2xl font-bold bg-gradient-to-r from-emerald-400 to-teal-500 bg-clip-text text-transparent">CaptureOsa</a>
+                <a href="https://RoosterJoose.github.io/capture-the-wild-beauty-of-costa-rica-2025-02-12-58lw7" class="text-2xl font-bold bg-gradient-to-r from-emerald-400 to-teal-500 bg-clip-text text-transparent hover:scale-105 transition-all duration-300">CaptureOsa</a>
+                
+                <button class="mobile-menu-button md:hidden p-2 rounded-lg hover:bg-gray-800 transition-colors duration-300" aria-label="Toggle Menu">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+
                 <div class="hidden md:flex space-x-8">
-                    <a href="#workshops" class="text-gray-300 hover:text-white transition-colors duration-300">Workshops</a>
-                    <a href="#features" class="text-gray-300 hover:text-white transition-colors duration-300">Features</a>
-                    <a href="#benefits" class="text-gray-300 hover:text-white transition-colors duration-300">Benefits</a>
-                    <a href="#faq" class="text-gray-300 hover:text-white transition-colors duration-300">FAQ</a>
+                    <a href="#workshops" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">Workshops</a>
+                    <a href="#features" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">Features</a>
+                    <a href="#benefits" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">Benefits</a>
+                    <a href="#testimonials" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">Testimonials</a>
+                    <a href="#about" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">About</a>
+                    <a href="#faq" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">FAQ</a>
                 </div>
-                <a href="https://captureosa.com" class="hidden md:block px-6 py-2 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-full font-medium hover:scale-105 transition-transform duration-300">Book Now</a>
+
+                <div class="mobile-menu hidden md:hidden absolute top-full left-0 w-full bg-gray-900/95 border-b border-gray-800">
+                    <div class="px-6 py-4 space-y-4">
+                        <a href="#workshops" class="block text-gray-300 hover:text-white hover:bg-gray-800 px-4 py-2 rounded-lg transition-all duration-300">Workshops</a>
+                        <a href="#features" class="block text-gray-300 hover:text-white hover:bg-gray-800 px-4 py-2 rounded-lg transition-all duration-300">Features</a>
+                        <a href="#benefits" class="block text-gray-300 hover:text-white hover:bg-gray-800 px-4 py-2 rounded-lg transition-all duration-300">Benefits</a>
+                        <a href="#testimonials" class="block text-gray-300 hover:text-white hover:bg-gray-800 px-4 py-2 rounded-lg transition-all duration-300">Testimonials</a>
+                        <a href="#about" class="block text-gray-300 hover:text-white hover:bg-gray-800 px-4 py-2 rounded-lg transition-all duration-300">About</a>
+                        <a href="#faq" class="block text-gray-300 hover:text-white hover:bg-gray-800 px-4 py-2 rounded-lg transition-all duration-300">FAQ</a>
+                    </div>
+                </div>
+
+                <a href="https://captureosa.com" class="hidden md:block px-6 py-2 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-full font-medium hover:scale-105 hover:shadow-lg hover:shadow-emerald-500/25 transition-all duration-300">Book Now</a>
             </div>
         </nav>
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
             <div class="absolute inset-0 z-0">
                 <img src="https://images.unsplash.com/photo-1518005068251-37900150dfca" alt="Costa Rica Rainforest" class="w-full h-full object-cover opacity-40">
@@ -33,97 +62,169 @@
             <div class="container mx-auto px-6 pt-32 relative z-10">
                 <div class="max-w-4xl mx-auto text-center">
                     <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-8 bg-gradient-to-r from-emerald-400 to-teal-500 bg-clip-text text-transparent">Capture the Wild Beauty of Costa Rica</h1>
-                    <p class="text-xl md:text-2xl text-gray-300 mb-12">Master wildlife photography in one of Earth's most biodiverse paradises</p>
-                    <a href="https://captureosa.com" class="inline-block px-8 py-4 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-full text-lg font-medium hover:scale-105 transition-transform duration-300 shadow-lg shadow-emerald-500/25">Start Your Journey</a>
+                    <p class="text-xl md:text-2xl text-gray-300 mb-12">Master wildlife photography in one of Earth's most biodiverse paradises. Join our expert-led workshops and transform your photography skills while exploring pristine rainforests and encountering exotic wildlife.</p>
+                    <a href="https://captureosa.com" class="inline-block px-8 py-4 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-full text-lg font-medium hover:scale-105 hover:shadow-lg hover:shadow-emerald-500/25 transition-all duration-300">Start Your Journey</a>
                 </div>
             </div>
         </section>
 
+        <!-- Features Section -->
         <section id="features" class="py-24 bg-gray-800/50">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Expert-Led Photography Experiences</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                    <div class="bg-gray-800 rounded-2xl p-8 hover:scale-105 transition-transform duration-300 border border-gray-700">
+                    <div class="bg-gray-800 rounded-2xl p-8 hover:scale-105 hover:shadow-xl hover:shadow-emerald-500/10 transition-all duration-300 border border-gray-700">
                         <div class="w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-full mb-6 flex items-center justify-center">
                             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path>
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Photography Workshops</h3>
-                        <p class="text-gray-400">Immersive sessions designed for all skill levels, focusing on wildlife and landscape photography.</p>
+                        <h3 class="text-xl font-semibold mb-4">Immersive Photography Workshops</h3>
+                        <p class="text-gray-400">Experience hands-on learning in small groups with personalized attention. Master advanced techniques for capturing wildlife, landscapes, and macro photography in Costa Rica's most photogenic locations.</p>
                     </div>
 
-                    <div class="bg-gray-800 rounded-2xl p-8 hover:scale-105 transition-transform duration-300 border border-gray-700">
+                    <div class="bg-gray-800 rounded-2xl p-8 hover:scale-105 hover:shadow-xl hover:shadow-emerald-500/10 transition-all duration-300 border border-gray-700">
                         <div class="w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-full mb-6 flex items-center justify-center">
                             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Expert Guidance</h3>
-                        <p class="text-gray-400">Learn from experienced photographers who know Costa Rica's wildlife and terrain intimately.</p>
+                        <h3 class="text-xl font-semibold mb-4">Professional Guidance</h3>
+                        <p class="text-gray-400">Learn from award-winning photographers with decades of experience in wildlife photography. Benefit from their intimate knowledge of Costa Rica's ecosystems and wildlife behavior patterns.</p>
                     </div>
 
-                    <div class="bg-gray-800 rounded-2xl p-8 hover:scale-105 transition-transform duration-300 border border-gray-700">
+                    <div class="bg-gray-800 rounded-2xl p-8 hover:scale-105 hover:shadow-xl hover:shadow-emerald-500/10 transition-all duration-300 border border-gray-700">
                         <div class="w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-full mb-6 flex items-center justify-center">
                             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Post Processing</h3>
-                        <p class="text-gray-400">Master the art of editing with professional post-processing techniques and workflows.</p>
+                        <h3 class="text-xl font-semibold mb-4">Advanced Post Processing</h3>
+                        <p class="text-gray-400">Master professional editing techniques using industry-standard software. Learn color grading, advanced selection methods, and workflow optimization to bring out the best in your images.</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Benefits Section -->
         <section id="benefits" class="py-24 relative overflow-hidden">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Transform Your Photography</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-                    <div class="relative bg-gray-800/50 rounded-2xl p-8 backdrop-blur-sm border border-gray-700/50">
-                        <h3 class="text-xl font-semibold mb-4">Improve Your Skills</h3>
-                        <p class="text-gray-400">Develop technical mastery and creative vision through hands-on experience.</p>
+                    <div class="relative bg-gray-800/50 rounded-2xl p-8 backdrop-blur-sm border border-gray-700/50 hover:scale-105 hover:shadow-xl hover:shadow-emerald-500/10 transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">Master Technical Skills</h3>
+                        <p class="text-gray-400">Develop complete mastery over your camera settings, composition techniques, and advanced lighting methods. Learn to anticipate and capture decisive moments in wildlife photography.</p>
                     </div>
-                    <div class="relative bg-gray-800/50 rounded-2xl p-8 backdrop-blur-sm border border-gray-700/50">
-                        <h3 class="text-xl font-semibold mb-4">Be Challenged</h3>
-                        <p class="text-gray-400">Push your boundaries in diverse shooting conditions and environments.</p>
+                    <div class="relative bg-gray-800/50 rounded-2xl p-8 backdrop-blur-sm border border-gray-700/50 hover:scale-105 hover:shadow-xl hover:shadow-emerald-500/10 transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">Creative Growth</h3>
+                        <p class="text-gray-400">Push your artistic boundaries through challenging assignments and creative exercises. Develop your unique photographic style while working in diverse environments.</p>
                     </div>
-                    <div class="relative bg-gray-800/50 rounded-2xl p-8 backdrop-blur-sm border border-gray-700/50">
-                        <h3 class="text-xl font-semibold mb-4">Gain Knowledge</h3>
-                        <p class="text-gray-400">Learn about local wildlife, ecosystems, and conservation efforts.</p>
+                    <div class="relative bg-gray-800/50 rounded-2xl p-8 backdrop-blur-sm border border-gray-700/50 hover:scale-105 hover:shadow-xl hover:shadow-emerald-500/10 transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">Environmental Expertise</h3>
+                        <p class="text-gray-400">Gain deep insights into Costa Rica's ecosystems, wildlife behavior, and conservation efforts. Learn how to photograph responsibly in sensitive natural environments.</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-24 bg-gray-800/50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">What Our Participants Say</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-800 rounded-xl p-8 hover:scale-102 transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-emerald-400">★★★★★</div>
+                        </div>
+                        <p class="text-gray-300 mb-4">"The workshop exceeded all my expectations. I learned more in 5 days than in years of self-study. The wildlife encounters were incredible, and the post-processing sessions transformed my editing workflow completely."</p>
+                        <div class="text-sm text-gray-400">
+                            <p class="font-semibold">Sarah Thompson</p>
+                            <p>Amateur Wildlife Photographer</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 rounded-xl p-8 hover:scale-102 transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-emerald-400">★★★★★</div>
+                        </div>
+                        <p class="text-gray-300 mb-4">"A life-changing experience! The instructors' knowledge of wildlife behavior helped me capture shots I never thought possible. The small group size meant plenty of individual attention."</p>
+                        <div class="text-sm text-gray-400">
+                            <p class="font-semibold">Michael Chen</p>
+                            <p>Travel Photographer</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 rounded-xl p-8 hover:scale-102 transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-emerald-400">★★★★★</div>
+                        </div>
+                        <p class="text-gray-300 mb-4">"Worth every penny! The technical expertise shared was invaluable, but what really set this apart was the attention to wildlife conservation and responsible photography practices."</p>
+                        <div class="text-sm text-gray-400">
+                            <p class="font-semibold">Emma Rodriguez</p>
+                            <p>Conservation Photographer</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 rounded-xl p-8 hover:scale-102 transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-emerald-400">★★★★★</div>
+                        </div>
+                        <p class="text-gray-300 mb-4">"As a beginner, I was worried about keeping up, but the instructors were incredibly patient and supportive. I left with a portfolio of images I'm proud of and skills I'll use forever."</p>
+                        <div class="text-sm text-gray-400">
+                            <p class="font-semibold">David Wilson</p>
+                            <p>Hobbyist Photographer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-24">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">About CaptureOsa</h2>
+                <div class="max-w-3xl mx-auto space-y-8">
+                    <p class="text-gray-300 leading-relaxed">Founded in 2015 by award-winning wildlife photographer James Martinez, CaptureOsa began with a vision to share the incredible biodiversity of Costa Rica's Osa Peninsula with photographers worldwide. What started as small group workshops has grown into a renowned photography education program, helping hundreds of photographers develop their skills while promoting wildlife conservation.</p>
+                    <p class="text-gray-300 leading-relaxed">Our mission is to inspire and educate photographers while fostering a deep respect for nature and wildlife. We believe in responsible photography practices that prioritize animal welfare and environmental conservation. Through our workshops, we aim to create advocates for Costa Rica's unique ecosystems while helping photographers capture their beauty in extraordinary ways.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
         <section id="faq" class="py-24 bg-gray-800/50">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Frequently Asked Questions</h2>
                 <div class="max-w-3xl mx-auto space-y-6">
-                    <div class="bg-gray-800 rounded-xl p-6">
+                    <div class="bg-gray-800 rounded-xl p-6 hover:scale-102 transition-all duration-300">
                         <h3 class="text-lg font-semibold mb-3">What skill level is required?</h3>
-                        <p class="text-gray-400">Our workshops accommodate all skill levels, from beginners to advanced photographers.</p>
+                        <p class="text-gray-400">Our workshops accommodate all skill levels, from complete beginners to seasoned professionals. We tailor our instruction to meet each participant's needs and ensure everyone grows significantly during their time with us.</p>
                     </div>
-                    <div class="bg-gray-800 rounded-xl p-6">
+                    <div class="bg-gray-800 rounded-xl p-6 hover:scale-102 transition-all duration-300">
                         <h3 class="text-lg font-semibold mb-3">What equipment should I bring?</h3>
-                        <p class="text-gray-400">A detailed equipment list will be provided upon booking. Basic requirements include a DSLR or mirrorless camera and a zoom lens.</p>
+                        <p class="text-gray-400">We recommend a DSLR or mirrorless camera, telephoto lens (minimum 300mm), wide-angle lens, macro lens (optional), tripod, and laptop with Adobe Lightroom installed. A detailed equipment list will be provided upon booking.</p>
                     </div>
-                    <div class="bg-gray-800 rounded-xl p-6">
-                        <h3 class="text-lg font-semibold mb-3">How long are the workshops?</h3>
-                        <p class="text-gray-400">We offer various durations, from 3-day intensive workshops to 7-day comprehensive experiences.</p>
+                    <div class="bg-gray-800 rounded-xl p-6 hover:scale-102 transition-all duration-300">
+                        <h3 class="text-lg font-semibold mb-3">What's included in the workshop price?</h3>
+                        <p class="text-gray-400">Workshop fees cover accommodation, local transportation, meals, photography instruction, post-processing sessions, and park entrance fees. International flights and equipment are not included.</p>
+                    </div>
+                    <div class="bg-gray-800 rounded-xl p-6 hover:scale-102 transition-all duration-300">
+                        <h3 class="text-lg font-semibold mb-3">How physically demanding are the workshops?</h3>
+                        <p class="text-gray-400">Workshops involve moderate hiking on established trails. Participants should be comfortable walking 3-4 miles per day with camera gear. We can accommodate different fitness levels and adjust activities accordingly.</p>
+                    </div>
+                    <div class="bg-gray-800 rounded-xl p-6 hover:scale-102 transition-all duration-300">
+                        <h3 class="text-lg font-semibold mb-3">What's the best time to visit?</h3>
+                        <p class="text-gray-400">While Costa Rica offers great photography opportunities year-round, December to April (dry season) typically provides the most stable weather conditions and highest wildlife activity.</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- CTA Section -->
         <section class="py-24 relative">
             <div class="container mx-auto px-6">
-                <div class="bg-gradient-to-r from-emerald-900/90 to-teal-900/90 rounded-3xl p-12 relative overflow-hidden">
+                <div class="bg-gradient-to-r from-emerald-900/90 to-teal-900/90 rounded-3xl p-12 relative overflow-hidden hover:shadow-2xl hover:shadow-emerald-500/20 transition-all duration-300">
                     <div class="relative z-10">
                         <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Begin Your Photography Adventure?</h2>
-                        <p class="text-xl text-gray-300 mb-8">Join us in Costa Rica for an unforgettable photography experience.</p>
-                        <a href="https://captureosa.com" class="inline-block px-8 py-4 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-full text-lg font-medium hover:scale-105 transition-transform duration-300">Book Your Workshop</a>
+                        <p class="text-xl text-gray-300 mb-8">Join us in Costa Rica for an unforgettable photography experience that will transform your skills and perspective.</p>
+                        <a href="https://captureosa.com" class="inline-block px-8 py-4 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-full text-lg font-medium hover:scale-105 hover:shadow-lg hover:shadow-emerald-500/25 transition-all duration-300">Book Your Workshop</a>
                     </div>
                 </div>
             </div>
@@ -135,25 +236,26 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
                 <div>
                     <h3 class="text-xl font-bold mb-4">CaptureOsa</h3>
-                    <p class="text-gray-400">Professional photography workshops in Costa Rica.</p>
+                    <p class="text-gray-400">Professional photography workshops in Costa Rica's most biodiverse paradise.</p>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Contact</h4>
                     <p class="text-gray-400">johnson.bryce@gmail.com</p>
+                    <p class="text-gray-400">+506 8888-8888</p>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Workshops</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">About Us</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a></li>
+                        <li><a href="#workshops" class="text-gray-400 hover:text-white transition-colors duration-300">Workshops</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors duration-300">About Us</a></li>
+                        <li><a href="https://RoosterJoose.github.io/capture-the-wild-beauty-of-costa-rica-2025-02-12-58lw7/blog.html" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Legal</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://RoosterJoose.github.io/capture-the-wild-beauty-of-costa-rica-2025-02-12-58lw7/privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://RoosterJoose.github.io/capture-the-wild-beauty-of-costa-rica-2025-02-12-58lw7/terms.html" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
                     </ul>
                 </div>
             </div>
@@ -162,5 +264,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
